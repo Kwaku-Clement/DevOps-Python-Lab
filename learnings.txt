@@ -1,0 +1,29 @@
+========================================================================
+DevOps Python Fundamentals - Beginner Learnings Log
+========================================================================
+
+1. What was the easiest part?
+The easiest part was writing the print statements and creating variables. 
+Python reads a lot like plain English, so setting up things like 
+`student_name = "Alex"` or listing out the DevOps tools made sense right 
+away. It was really satisfying to run the script and see my own name 
+and goals print out to the screen.
+
+2. What did you struggle with, and how did you solve it?
+I struggled with two main things: data types and indentation. 
+When I first wrote the server check script, it crashed because I forgot 
+that `input()` reads everything as text. I couldn't compare text to the 
+number 90. I solved it by learning how to "cast" the text into a number 
+using `int()`. 
+
+I also got an `IndentationError` on the loop and file-reading scripts. 
+I had to learn that Python is very strict about spaces. Once I aligned 
+my code blocks properly using 4 spaces, everything worked perfectly.
+
+3. What did you learn that you didn't know before?
+I learned that scripts can actually talk to my computer's operating system! 
+Before this, I thought logs were just text files you looked at manually, 
+but now I know Python can open them, read them line-by-line, and count 
+them automatically. I also learned about f-strings (`f"..."`), which make 
+it incredibly easy to mix regular words with my variables without a bunch 
+of messy plus signs.
