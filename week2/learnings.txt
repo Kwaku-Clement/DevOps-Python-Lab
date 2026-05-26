@@ -1,0 +1,28 @@
+========================================================================
+DevOps Python Fundamentals - Week 2 Learnings Log
+========================================================================
+
+1. What did you learn about functions that you didn't appreciate before?
+I didn't realize how powerful the `return` keyword is compared to just using 
+`print()` inside a function. Before, I thought functions were just short chunks 
+of code to save typing. Now I see that `return` lets functions act like 
+independent tools: they take an input, transform it, and give a clean answer 
+back to the rest of the script. This makes it easy to pass data between functions, 
+like passing a file to `count_lines()` and then sending the output straight to a summary statement.
+
+2. Was sys.argv easy or confusing? Why?
+It was a bit confusing at first because it handles arrays/lists implicitly. 
+It took a moment to grasp that `sys.argv[0]` is always the script name itself, 
+and the actual file I want to check doesn't start until `sys.argv[1]`. 
+Once I realized it's just an ordinary list of strings that Python automatically 
+creates whenever I hit 'Enter' in the terminal, it became much easier. 
+It's way faster than using `input()` because I can pass parameters instantly.
+
+3. How did you test your error handling? (What bad inputs did you try?)
+I tested my code using three distinct scenarios:
+  - Missing File: I typed a file name that didn't exist (e.g., `python file_stats.py fake_file.log`). 
+    This verified that `except FileNotFoundError` caught the error and printed my human-friendly message instead of crashing.
+  - Empty Input: I ran the scripts without passing any filename at all (e.g., `python log_summary.py`). 
+    This confirmed that the `len(sys.argv) < 2` validation block caught the missing input and showed the proper 'Usage:' instructions.
+  - Directory instead of File: I passed a directory name instead of a filename (e.g., `python file_stats.py week2`). 
+    This triggered the general `except Exception as e` safety net block, catching the system's read block cleanly.
