@@ -15,7 +15,7 @@ def count_log_levels(filename):
                 if "WARNING" in line:
                     counts["WARNING"] += 1
     except FileNotFoundError:
-        prinnnt(f"Error: The file '{filename}' was not found.")
+        print(f"Error: The file '{filename}' was not found.")
     except PermissionError:
         print(f"Error: You do not have permission to read the file '{filename}'.")
     except Exception as e:
