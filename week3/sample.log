@@ -1,0 +1,16 @@
+2026-05-25 10:12:01 [INFO] Server initialized successfully on port 8080.
+2026-05-25 10:12:05 [INFO] GET /index.html - 200 OK - Response time: 12ms
+2026-05-25 10:12:12 [INFO] GET /static/css/main.css - 200 OK - Response time: 4ms
+2026-05-25 10:13:45 [WARN] Database connection pool reaching 80% capacity.
+2026-05-25 10:14:02 [INFO] POST /api/v1/login - 200 OK - User logged in: admin
+2026-05-25 10:14:20 [ERROR] GET /api/v1/metrics - 500 Internal Server Error
+2026-05-25 10:14:22 [INFO] GET /favicon.ico - 404 Not Found - Response time: 2ms
+2026-05-25 10:15:00 [INFO] Cron job 'cleanup_sessions' executed successfully.
+2026-05-25 10:12:01 [INFO] Server initialized successfully on port 8080.
+2026-05-25 10:12:05 [INFO] GET /index.html - 200 OK - Response time: 12ms
+2026-05-25 10:12:12 [INFO] GET /static/css/main.css - 200 OK - Response time: 4ms
+2026-05-25 10:13:45 [WARN] Database connection pool reaching 80% capacity.
+2026-05-25 10:14:02 [INFO] POST /api/v1/login - 200 OK - User logged in: admin
+2026-05-25 10:14:20 [ERROR] GET /api/v1/metrics - 500 Internal Server Error
+2026-05-25 10:14:22 [INFO] GET /favicon.ico - 404 Not Found - Response time: 2ms
+2026-05-25 10:15:00 [INFO] Cron job 'cleanup_sessions' executed successfully.

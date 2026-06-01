@@ -1,0 +1,63 @@
+Basic Linux Commands Cheatsheet
+
+pwd — Prints the current working directory
+  Example: pwd
+  Output: /home/ubuntu/workspace
+
+ls — Lists directory contents (files and folders) in the current directory
+  Example: ls
+  Output: documents  downloads  projects  readme.txt
+
+ls -la — Lists all directory contents, including hidden files (starting with .), with detailed properties like permissions, size, and owner
+  Example: ls -la
+  Output: 
+  drwxr-xr-x 4 ubuntu ubuntu 4096 May 26 12:00 .
+  drwxr-xr-x 3 root   root   4096 May 26 11:55 ..
+  -rw-r--r-- 1 ubuntu ubuntu  220 May 26 11:55 .bash_logout
+  -rw-r--r-- 1 ubuntu ubuntu 3771 May 26 11:55 .bashrc
+  drwxr-xr-x 2 ubuntu ubuntu 4096 May 26 12:00 documents
+  -rw-r--r-- 1 ubuntu ubuntu   45 May 26 12:01 readme.txt
+
+cd — Changes the current working directory to a specified path
+  Example: cd documents
+  Output: (No direct output text, but the terminal prompt changes to show the user is now inside the 'documents' directory)
+
+mkdir — Creates a new directory (folder) with the specified name
+  Example: mkdir scripts
+  Output: (No output text, but running 'ls' afterwards reveals a new folder named 'scripts' has been created)
+
+touch — Creates an empty file or updates the timestamp of an existing file
+  Example: touch app.log
+  Output: (No output text, but an empty file named 'app.log' is immediately created in the directory)
+
+cp — Copies files or directories from a source path to a destination path
+  Example: cp readme.txt readme_backup.txt
+  Output: (No output text, but an identical copy of 'readme.txt' named 'readme_backup.txt' appears in the directory)
+
+mv — Moves or renames files and directories
+  Example: mv app.log logs/app.log
+  Output: (No output text, but 'app.log' is successfully moved out of the current folder and into the 'logs' folder)
+
+rm — Removes (deletes) files or directories
+  Example: rm readme_backup.txt
+  Output: (No output text, but 'readme_backup.txt' is permanently deleted from the file system)
+
+cat — Concatenates and displays the contents of one or more files in the terminal
+  Example: cat readme.txt
+  Output: Welcome to the DevOps Basics Course! Lesson 1 is starting.
+
+man — Displays the reference manual page for a specified command
+  Example: man ls
+  Output: (Opens an interactive text manual screen describing the name, synopsis, and description of options for the 'ls' command)
+
+chmod — Changes the file mode bits (read, write, execute permissions) of a file or directory
+  Example: chmod +x script.sh
+  Output: (No output text, but the file 'script.sh' gains executable permissions and its text color typically changes to green in 'ls')
+
+grep — Searches for specific patterns or text strings within files
+  Example: grep "DevOps" readme.txt
+  Output: Welcome to the DevOps Basics Course! Lesson 1 is starting.
+
+| (pipe) — Redirects the output of the first command to be used as the input for the second command
+  Example: ls -la | grep "readme"
+  Output: -rw-r--r-- 1 ubuntu ubuntu   45 May 26 12:01 readme.txt
