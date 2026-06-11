@@ -1,0 +1,14 @@
+======================================================================
+WEEK 5
+======================================================================
+
+1. CI vs. CD:
+- CI (Continuous Integration) builds, lints, and tests your code automatically on every push to catch errors early. 
+- CD (Continuous Deployment) is the next step that automates releasing that verified code to production.
+
+2. Value of Automation:
+- It acts as an automatic gatekeeper, catching bugs immediately via failing test exit codes and enforcing clean code standards with linters before any human review.
+
+3. Flake8 Issues & Solutions:
+- Problem: Initial syntax, line-length, and blank-line warnings failed the pipeline.
+- Solution: Configured a '.flake8' file to ignore minor rules (E302, E305), raised the line limit to 100, and cleaned up the scripts until the pipeline turned green.
