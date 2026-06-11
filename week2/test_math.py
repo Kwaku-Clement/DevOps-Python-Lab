@@ -18,7 +18,7 @@ def test_is_even():
 
 def test_sum_list():
     assert sum_list([1, 2, 3]) == 6
-    assert sum_list([0]) == 5
+    assert sum_list([5, 6]) == 11
     assert sum_list([]) == 0
 
     print("Sum list test passed!")
